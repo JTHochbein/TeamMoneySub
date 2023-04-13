@@ -5,29 +5,38 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import pages.UploadPage;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import pages.SB_MS921_UploadImage_Page;
 import qa.factory.DriverFactory;
 
-public class Steps {
+import java.time.Duration;
+
+public class SB_MS921_UploadImage_Steps {
 
 
 
     final String URL="https://testpages.herokuapp.com/styled/file-upload-test.html";
      WebDriver driver = DriverFactory.getDriver();
-    private UploadPage uploadPage = new UploadPage(driver);
-    WebDriverWait wait= new WebDriverWait(uploadPage,10);
+    private SB_MS921_UploadImage_Page SBMS921UploadImagePage = new SB_MS921_UploadImage_Page(driver);
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
     @Given("I open the application")
     public void i_open_the_application(){
 
         driver.get(URL);
 
+
+
     }
 
     @And("I should see the Choose file button")
     public void i_should_see_the_Choose_file_button(){
-        String massege = uploadPage.checkChoosefile().getText();
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/h1")));
+        String massege = SBMS921UploadImagePage.checkChoosefile().getText();
         Assert.assertEquals(massege, "Upload a File");
 
 
@@ -36,9 +45,9 @@ public class Steps {
     @When("I choose my file and submit Upload")
     public void i_choose_my_file_and_submit_upload(){
 
-        uploadPage.hitUploadLink().sendKeys("C:\\Users\\Suliman Behroz\\Downloads\\bild.png.png");
-        uploadPage.hitItsImage().click();
-        uploadPage.hitSubmit().submit();
+        SBMS921UploadImagePage.hitUploadLink().sendKeys("C:\\Users\\Suliman Behroz\\Downloads\\bild.png.png");
+        SBMS921UploadImagePage.hitItsImage().click();
+        SBMS921UploadImagePage.hitSubmit().submit();
 
     }
     @Then("I should see Upload successful message")
@@ -49,7 +58,7 @@ public class Steps {
     }
     @And("I wait for 10 Seconds and close the window")
     public void I_wait_for_10_Seconds_and_close_the_window() throws InterruptedException{
-       // WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div[2]/p")));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div[2]/p")));
 
     }
 
