@@ -1,0 +1,20 @@
+Hello everyone first of all i would like to thank you for this opportunity 
+
+My name is SUliman Behroz, since last 5 years i have been in the quality assurance field as a software tester and in this period of time i have regocnized many different soft skills about myself which i could bring to the project, i would like to mention atleast three of them if thats ok for you?
+
+first of all i am a very communicative person as i am grown in a multi cultural city and always been in contact with different types of cultures this makes me able to interact and build a connection with anyone, this skill is also very important in my working life as one type of communication is documentation this means how i work on daily basis how i document my protocols so that everyone can easily understand it .
+
+the second attribute is that i am proaktive person if its in my private life or working enviroment i do get prepared in advance and make sure every is ready to be fired on for example once we had a stituation in the previous projects where we wanted to execute some tests and the test data was not available most the team members sat back and said we have to wait until the test data is available but me on other hand contacted the dev team and asked if we could create the test data ourself so we could already begin with testing instead of waiting. which i then later on also mentioned as a suggestion in the retro meeting .
+
+as the last i would like to say that i have the mindset of finding solutions... here i would also give an example of my working experience if i am working on a story and everything doesnt work as described in the story in this case i would not just report it as a bug and gave up on it i try to find out the reason behind it because sometimes there is a minor bug which could be fixed by us .
+
+these were some of the softskills now i would like to talk about my hardskills which also plays a very important role for the project
+
+i have worked in 4 different projects but i would like to mentions my daily tasks from the last two projects or else it could get alittle boring if i talk about all of them 
+
+
+my last project by Otto i was working in an agile team with the scrum and Devops metholodgy where we had the devteam in our dailys. 
+
+we used Jira to create our bugreports and documentations and confluence to look out for log in details etc. in this project we were responsible for the Customer service payment systems and the dev team was working on a new method to encrypt Kreditcard details of the costumers and we as the tester maked sure that everything works as it has to.  the processes were build in the microsoft dynamics and with the help of microservices connected with the SAP and the credit card management system my part as a tester was to make sure that everything works fine with the GUI we used Katalon to automate the test cases via the record and play function , we perform integration tests on the APIS which were based on Rest architecture using postman we also did performance tests on the database using Jmeter were we mentioned several thread groups, i was also responsible to keep the regressiontests up to date and working, we were also doing the end to end tests to simulate real user scenarios and reported these to the dev team on weekly basis, i also created the fueature files for the stake holders and wrote the test cases in cucumber , we also did manuell testing such as usebality tests to check how user friendly the system is.
+
+in the project before that i was responsible for automated testing , we wrote and defined our tests with selenium in Java addionaly we used Junit so we could get a protocol of the tests as its not supported by Selenium, we also wrote the tests in TestNg so in a case of CI/CD we were able to execute the tests in a pipeline which we used jenkens for that , i also worked with tosca to test the apis in the early stage of software development to make sure that it fullfills its expected functionallity, and interegates with the system

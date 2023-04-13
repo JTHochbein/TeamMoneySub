@@ -1,0 +1,24 @@
+As a user i would like to register on demo.webshop
+
+Feature: Registration
+
+Scenario : User should be able to register successfully
+
+  @Given The user opens the demo.webshop
+
+  @And  The user sees the registration button
+
+  @And The user clicks the registration button
+
+  @When The user enters valid credentials
+
+  @Then The user submits the registration
+  
+  @And  The user should be able to succesfully register
+  @And  The User waits for confirmation message 
+
+   
+
+
+
+Acceptance criteria : Succesfull registration of a new user

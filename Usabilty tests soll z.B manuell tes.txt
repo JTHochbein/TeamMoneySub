@@ -1,0 +1,18 @@
+Usabilty tests soll z.B manuell test
+
+Performance test z.B automatisieren weil schwer auf einmal 1000 benutzer gleichzeitig zu haben
+
+Unit Testing: JUnit, TestNG, NUnit etc...
+
+Integration Testing:  FiNesse , RIT ( Rational Integration Tester ) , Protractor etc... 
+
+System Testing: Functional testing , Performance testing  : Selenium, LoadRunner etc...
+
+
+
+
+
+
+
+
+ 
