@@ -12,7 +12,7 @@ public class OMB_MS873_InvestmentPage {
     By investmentAmount = By.id("investmentAmount");
     By investmentDuration = By.name("investmentDuration");
     By submitButton = By.name("submitButton");
-    By banksBlock = By.cssSelector(".bc-product-teaser:nth-child(4) .bc-product-teaser__block > .bc-headline");
+    public static By banksBlock = By.cssSelector(".bc-product-teaser:nth-child(4) .bc-product-teaser__block > .bc-headline");
     By banks1Interest = By.cssSelector(".bc-product-teaser:nth-child(4) .bc-product-teaser__interest");
     By banks1profit = By.cssSelector(".bc-product-teaser:nth-child(4) .bc-product-teaser__profit");
     By banks2Name = By.cssSelector(".bc-product-teaser:nth-child(5) .bc-product-teaser__block > .bc-headline");

@@ -22,16 +22,18 @@ public class OMB_MS873_FinanzenPage {
         WebElement returnValue;
         try {
            returnValue = driver.findElement(linkChild1);
+            System.out.println("Gefunden: " + linkChild1);
            return returnValue;
         } catch (NoSuchElementException e) {
-            DriverFactory.logger(Level.WARNING, "Logger: Could not find: " + linkChild1);
-            System.out.println("Could not find: " + linkChild1);
+            // DriverFactory.logger(Level.WARNING, "Logger: Could not find: " + linkChild1);
+            System.out.println("Konnte nicht finden: " + linkChild1);
         }
         try {
             returnValue = driver.findElement(linkChild2);
+            System.out.println("Gefunden: " + linkChild2);
             return returnValue;
         } catch (NoSuchElementException e) {
-            System.out.println("Could not find: " + linkChild2);
+            System.out.println("Konnte nicht finden: " + linkChild2);
             return null;
         }
 
