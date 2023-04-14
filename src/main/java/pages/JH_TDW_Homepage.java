@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 import java.util.Random;
 
-public class TDW_Homepage {
+public class JH_TDW_Homepage {
     private WebDriver driver;
 
     private final By bluejeans_atc_button = By.xpath("/html/body/div[4]/div[1]/div[4]/div[2]/div[2]/div[2]/div[3]/div[3]/div/div[2]/div[3]/div[2]/input");
@@ -22,7 +22,7 @@ public class TDW_Homepage {
     private final By healtbook_atc_btn = By.xpath("/html/body/div[4]/div[1]/div[4]/div[2]/div[2]/div[2]/div[3]/div[5]/div/div[2]/div[3]/div[2]/input");
     private final By casualgolfbelt_atc_btn = By.xpath("/html/body/div[4]/div[1]/div[4]/div[2]/div[2]/div[2]/div[3]/div[4]/div/div[2]/div[3]/div[2]/input");
     private final By genuineleatherhandbag_atc_btn = By.xpath("/html/body/div[4]/div[1]/div[4]/div[2]/div[2]/div[2]/div[3]/div[7]/div/div[2]/div[3]/div[2]/input");
-    public TDW_Homepage(WebDriver driver) {
+    public JH_TDW_Homepage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }

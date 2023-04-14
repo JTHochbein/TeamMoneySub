@@ -5,12 +5,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 
-public class TDW_shoppingcart {
+public class JH_TDW_shoppingcart {
     private WebDriver driver;
 
     private final By PriceTag1 = By.xpath("/html/body/div[4]/div[1]/div[4]/div/div/div[2]/div/form/table/tbody/tr[1]/td[6]/span[2]");
 
-    public TDW_shoppingcart(WebDriver driver) {
+    public JH_TDW_shoppingcart(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }

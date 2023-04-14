@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-public class TDW_checkout {
+public class JH_TDW_checkout {
     private WebDriver driver;
 
     String email = "maxmusterman@email.com";
@@ -31,7 +31,7 @@ public class TDW_checkout {
     private By checkout_proof = By.xpath("//h1[normalize-space()='Thank you']");
     private By ordernumber_proof = By.xpath("/html/body/div[4]/div[1]/div[4]/div/div/div[2]/div/ul/li[1]");
 
-    public TDW_checkout(WebDriver driver) {
+    public JH_TDW_checkout(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }

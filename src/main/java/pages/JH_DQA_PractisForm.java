@@ -9,12 +9,10 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import javax.security.auth.Subject;
 import java.time.Duration;
-import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
-public class DQA_PractisForm {
+public class JH_DQA_PractisForm {
     private WebDriver driver;
     Faker faker = new Faker();
     private By first_name = By.xpath("//*[@id=\"firstName\"]");
@@ -35,7 +33,7 @@ public class DQA_PractisForm {
     private By city_ddown = By.xpath("//*[@id=\"city\"]/div/div[1]/div[1]");
     private By submit_btn = By.xpath("//*[@id=\"submit\"]");
     private By list = By.xpath("//*[@id=\"example-modal-sizes-title-lg\"]");
-    public DQA_PractisForm(WebDriver driver) {
+    public JH_DQA_PractisForm(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
