@@ -23,7 +23,6 @@ public class JH_SpiegelDE {
     public void accept_cookies() {
         WebElement iframe = driver.findElement(By.id("sp_message_iframe_767404"));
         this.driver.switchTo().frame(iframe);
-        this.driver.manage().getCookies();
         this.driver.findElement(accept_cookies_btn).click();
         this.driver.switchTo().defaultContent();
     }
