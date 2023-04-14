@@ -22,7 +22,7 @@ public class SB_MS921_UploadImage_Steps {
     final String URL="https://testpages.herokuapp.com/styled/file-upload-test.html";
      WebDriver driver = DriverFactory.getDriver();
     private SB_MS921_UploadImage_Page SBMS921UploadImagePage = new SB_MS921_UploadImage_Page(driver);
-    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 
     @Given("I open the application")
     public void i_open_the_application(){
@@ -52,6 +52,7 @@ public class SB_MS921_UploadImage_Steps {
     }
     @Then("I should see Upload successful message")
     public void I_should_see_Upload_successful_message(){
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/h1")));
 
 
 
@@ -59,6 +60,7 @@ public class SB_MS921_UploadImage_Steps {
     @And("I wait for 10 Seconds and close the window")
     public void I_wait_for_10_Seconds_and_close_the_window() throws InterruptedException{
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div[2]/p")));
+
 
     }
 

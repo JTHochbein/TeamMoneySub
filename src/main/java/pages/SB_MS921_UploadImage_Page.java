@@ -19,5 +19,5 @@ public class SB_MS921_UploadImage_Page {
 
     public WebElement checkChoosefile() { return driver.findElement(By.xpath("/html/body/div/h1"));}
 
-    public WebElement uploadSuccessful() { return driver.findElement(By.linkText("Uploaded File"));}
+    public WebElement uploadSuccessful() { return driver.findElement(By.xpath("/html/body/div/div[2]/p"));}
 }
