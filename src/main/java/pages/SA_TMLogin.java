@@ -3,12 +3,11 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.PageFactory;
 
-public class SA_TMCompose {
+public class SA_TMLogin {
     private WebDriver driver;
 
-    public SA_TMCompose(WebDriver driver) {
+    public SA_TMLogin(WebDriver driver) {
         this.driver = driver;
         //PageFactory.initElements(driver, this);
     }
@@ -43,16 +42,9 @@ public class SA_TMCompose {
     private final By SelectKaderPlayerDrei = By.xpath("//*[@id=\"squad\"]/li[1]");
     private final By SelectKaderPlayerVier = By.xpath("//*[@id=\"squad\"]/li[4]");
 
-    private final By outputText = By.xpath("//*[@id=\"traumelf-form\"]/tm-lineup/div[4]/div[1]/div/p/p[1]");
 
 
-    public By getClickElfErstellenBy() {
-        return ClickElfErstellen;
-    }
 
-    public WebElement getOutputText() {
-        return driver.findElement(outputText);
-    }
 
     public WebElement getframecookies(){
         return driver.findElement(framecookies);
